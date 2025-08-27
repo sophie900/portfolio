@@ -19,7 +19,7 @@ const CustomNavbar = () => {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <NavbarButton variant="dark">contact</NavbarButton>
+          <NavbarButton variant="primary">contact</NavbarButton>
         </NavBody>
 
         {/* Mobile Navigation */}

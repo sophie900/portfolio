@@ -2,9 +2,9 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
-    <main className="relative justify-center items-center
+    <main className="w-full justify-center items-center
       flex-col overflow-hidden mx-auto
-      px-10 md:px-20 lg:px-40"
+      px-16 md:px-20 lg:px-30 xl:px-40"
     >
       <div className="w-full max-w-7xl">
         <Hero />
