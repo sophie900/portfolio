@@ -1,6 +1,6 @@
 import { CardItem } from "./ui/3d-card";
 
-export const Tag = ({text} : {text: string}) => {
+export const ProjectTag = ({text} : {text: string}) => {
   return (
     <CardItem
       as="span"
