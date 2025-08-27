@@ -1,7 +1,5 @@
 import Hero from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
-import { ProjectTag } from "@/components/ProjectTag";
-import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 
 export default function Home() {
   return (
@@ -12,8 +10,8 @@ export default function Home() {
     >
         <Hero />
         <section className="mb-10">
-          <h1 className="relative text-2xl font-semibold text-center">Projects</h1>
-          <div className="flex flex-row flex-wrap justify-center items-start gap-8 font-sans mt-10 mb-10">
+          <h1 className="relative text-4xl font-semibold text-center">Projects</h1>
+          <div className="flex flex-row flex-wrap justify-center items-start gap-[2vw] font-sans mt-10 mb-10">
             <ProjectCard
               projectName="picChef"
               description="A full-stack recipe identification app powered by Gemini image recognition."

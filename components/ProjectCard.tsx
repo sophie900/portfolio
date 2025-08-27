@@ -20,7 +20,7 @@ export const ProjectCard = ({
       <CardBody className="bg-zinc-100 dark:bg-zinc-950/50
         relative group/card
         dark:hover:shadow-2xl dark:hover:shadow-indigo-600/[0.1] dark:border-white/[0.2] border-zinc-900/[0.1]
-        w-auto sm:w-[30rem] h-auto rounded-xl p-6 border
+        w-[84vw] md:w-[36vw] lg:w-[32vw] h-auto rounded-xl p-6 border
         hover:cursor-pointer"
       >
         <CardItem className="w-full">
@@ -34,14 +34,14 @@ export const ProjectCard = ({
         </CardItem>
 
         <CardItem
-            className="text-xl font-bold text-zinc-600 dark:text-white mt-4"
+            className="text-xl font-bold text-zinc-700 dark:text-zinc-200 mt-4"
         >
             {projectName}
         </CardItem>
 
         <CardItem
             as="p"
-            className="text-zinc-500 text-sm max-w-sm mt-2 dark:text-zinc-300"
+            className="text-zinc-500 dark:text-zinc-300 text-sm max-w-sm mt-2"
         >
             {description}
         </CardItem>
