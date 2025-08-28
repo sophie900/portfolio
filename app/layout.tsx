@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Instrument_Serif, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import CustomNavbar from "@/components/CustomNavbar";
 
@@ -18,10 +18,6 @@ const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif"
 });
 
-const inter = Inter({
-  variable: "--font-inter"
-})
-
 export const metadata: Metadata = {
   title: "Sophie Rong",
   description: "Sophie's creative portfolio",
@@ -35,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased`}
       >
         <CustomNavbar />
         {children}

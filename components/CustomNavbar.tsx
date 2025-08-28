@@ -7,9 +7,9 @@ const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const navItems = [
-    { name: "projects", link: "#projects" },
+    { name: "projects", link: "" },
     { name: "archive", link: "" },
-    { name: "about", link: "" },
+    { name: "about", link: "/about" },
   ];
 
   return (
@@ -19,7 +19,7 @@ const CustomNavbar = () => {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <NavbarButton variant="primary">contact</NavbarButton>
+          <NavbarButton as="a" href="" variant="primary">contact</NavbarButton>
         </NavBody>
 
         {/* Mobile Navigation */}
