@@ -7,7 +7,7 @@ const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const navItems = [
-    { name: "projects", link: "" },
+    { name: "projects", link: "#projects" },
     { name: "archive", link: "" },
     { name: "about", link: "" },
   ];
@@ -35,16 +35,20 @@ const CustomNavbar = () => {
             isOpen={menuOpen}
             onClose={() => setMenuOpen(false)}
           >
-            {navItems.map((item, index) => (
+            {navItems.map((item, idx) => (
               <a
-                key={index}
+                key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setMenuOpen(false)}
               >
-                {item.name}
+                <span className="block">{item.name}</span>
               </a>
             ))}
-            <NavbarButton variant="dark">
+            <NavbarButton
+              onClick={() => setMenuOpen(false)}
+              variant="dark"
+              className="w-full"
+            >
               contact
             </NavbarButton>
           </MobileNavMenu>

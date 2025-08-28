@@ -9,7 +9,7 @@ export default function Home() {
       px-10 md:px-20 lg:px-30 xl:px-40"
     >
         <Hero />
-        <section className="mb-10">
+        <section id="projects" className="mt-10 mb-10">
           <h1 className="relative text-4xl font-semibold text-center">Projects</h1>
           <div className="flex flex-row flex-wrap justify-center items-start gap-[2vw] font-sans mt-10 mb-10">
             <ProjectCard
