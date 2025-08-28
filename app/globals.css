@@ -61,6 +61,10 @@
     --foreground: var(--color-zinc-50);
   }
 }
+/* 
+html {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+} */
 
 body {
   background: var(--background);
