@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import { ProjectCard } from "@/components/ProjectCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -66,12 +67,12 @@ export default function Home() {
         <section id="contact" className="mt-10 mb-20">
           <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">Let's get in touch!</h1>
           <p className="text-md text-zinc-700 dark:text-zinc-300 p-8">
-            Contact me at <a
+            Contact me at <Link
               href="mailto:sophie.rong@gmail.com"
               className="underline transition-all ease-in-out hover:text-indigo-600 dark:hover:text-indigo-400"
             >
               sophie.rong@gmail.com
-            </a>
+            </Link>
           </p>
         </section>
     </main>

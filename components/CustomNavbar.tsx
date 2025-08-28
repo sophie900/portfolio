@@ -2,13 +2,14 @@
 import React from 'react'
 import { useState } from 'react';
 import { Navbar, NavbarLogo, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarButton } from "@/components/ui/resizable-navbar";
+import Link from 'next/link';
 
 const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const navItems = [
-    { name: "projects", link: "" },
-    { name: "archive", link: "" },
+    { name: "projects", link: "/projects" },
+    { name: "archive", link: "/archive" },
     { name: "about", link: "/about" },
   ];
 
@@ -36,13 +37,13 @@ const CustomNavbar = () => {
             onClose={() => setMenuOpen(false)}
           >
             {navItems.map((item, idx) => (
-              <a
+              <Link
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setMenuOpen(false)}
               >
                 <span className="block">{item.name}</span>
-              </a>
+              </Link>
             ))}
             <NavbarButton
               onClick={() => setMenuOpen(false)}
