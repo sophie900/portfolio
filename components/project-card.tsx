@@ -18,44 +18,45 @@ export const ProjectCard = ({
   }) => {
   return (
     <CardContainer>
-      <Link href={link} target="_blank">
-        <CardBody className="bg-zinc-200/50 dark:bg-zinc-950/50
-            relative group/card
-            dark:border-zinc-300/20 border-zinc-900/20
-            w-[84vw] md:w-[36vw] lg:w-[32vw] h-auto rounded-xl p-6 border
-            hover:cursor-pointer"
-        >
-            <CardItem className="w-full">
-                <img
-                    src={imagePath}
-                    height="1000"
-                    width="1000"
-                    className="h-60 w-full object-cover rounded-lg group-hover/card:shadow-xl"
-                    alt={projectName + " thumbnail"}
-                />
-            </CardItem>
+      <CardBody className="bg-zinc-200/50 dark:bg-zinc-950/50
+        relative group/card hover:shadow-2xl hover:shadow-indigo-600/20
+        transition-all ease-in-out duration-300
+        dark:border-zinc-300/20 border-zinc-900/20
+        w-[84vw] md:w-[36vw] lg:w-[32vw] h-auto rounded-xl p-6 border
+        hover:cursor-pointer"
+      >
+        <Link href={link} target="_blank">
+          <CardItem className="w-full">
+            <img  // TODO: remove placeholder image & use Image tag
+              src={imagePath}
+              height="1000"
+              width="1000"
+              className="h-60 w-full object-cover rounded-lg"
+              alt={projectName + " thumbnail"}
+            />
+          </CardItem>
 
-            <CardItem
-                className="text-xl font-bold text-zinc-700 dark:text-zinc-200 mt-4"
-            >
-                {projectName}
-            </CardItem>
+          <CardItem
+            className="text-xl font-bold text-zinc-700 dark:text-zinc-200 mt-4"
+          >
+            {projectName}
+          </CardItem>
 
-            <CardItem
-                as="p"
-                className="text-zinc-500 dark:text-zinc-300 text-sm max-w-sm mt-2"
-            >
-                {description}
-            </CardItem>
+          <CardItem
+            as="p"
+            className="text-zinc-500 dark:text-zinc-300 text-sm max-w-sm mt-2"
+          >
+            {description}
+          </CardItem>
 
-            <div className="flex flex-wrap gap-2 mt-4">
-                {tags.map((item, idx) => {
-                    return(<ProjectTag text={item} key={item+idx} />)
-                })}
-            </div>
-        
-        </CardBody>
-      </Link>
+          <div className="flex flex-wrap gap-2 mt-4">
+            {tags.map((item, idx) => {
+              return(<ProjectTag text={item} key={item+idx} />)
+            })}
+          </div>
+        </Link>
+      </CardBody>
+      
     </CardContainer>
   )
 }

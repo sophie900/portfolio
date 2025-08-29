@@ -70,7 +70,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
             disableTransitionOnChange
           >
             <CustomNavbar />
-            {children}
+            <main className="w-full
+              flex flex-col justify-center items-center
+              mx-auto overflow-hidden
+              px-10 md:px-20 lg:px-30 xl:px-40
+              mb-10"
+            >
+              {children}
+            </main>
           </ThemeProvider>
         </body>
       </html>

@@ -4,11 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="w-full
-      flex flex-col justify-center items-center
-      mx-auto overflow-hidden
-      px-10 md:px-20 lg:px-30 xl:px-40"
-    >
+    <>
         <Hero />
         <section id="projects" className="mt-10 mb-10">
           <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
@@ -29,7 +25,7 @@ export default function Home() {
               description="My personal coding & art portfolio. You're looking at it right now :)"
               link="/"
               imagePath="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              tags={["Next.js", "Typescript", "Tailwind CSS", "Aceternity UI"]}
+              tags={["Next.js", "Typescript", "Tailwind CSS", "Shadcn", "Aceternity UI"]}
             />
 
             <ProjectCard
@@ -64,7 +60,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="contact" className="mt-10 mb-20">
+        <section id="contact" className="mt-10 mb-10">
           <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">Let's get in touch!</h1>
           <p className="paragraph p-8">
             Contact me at <Link
@@ -75,6 +71,6 @@ export default function Home() {
             </Link>
           </p>
         </section>
-    </main>
+    </>
   );
 }

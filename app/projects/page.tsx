@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p className="paragraph">Projects Page</p>;
+  return <p className="paragraph mt-10">Under construction</p>;
 }

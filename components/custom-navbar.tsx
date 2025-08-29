@@ -23,7 +23,6 @@ const CustomNavbar = () => {
           <NavbarLogo />
           <NavItems items={navItems} />
           <ModeToggle />
-          {/* <NavbarButton as="a" href="" variant="primary">contact</NavbarButton> */}
         </NavBody>
 
         {/* Mobile Navigation */}
@@ -48,13 +47,7 @@ const CustomNavbar = () => {
                 <span className="block">{item.name}</span>
               </Link>
             ))}
-            <NavbarButton
-              onClick={() => setMenuOpen(false)}
-              variant="dark"
-              className="w-full"
-            >
-              contact
-            </NavbarButton>
+            <ModeToggle />
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
