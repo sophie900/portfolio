@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 const instrumentSerif = Instrument_Serif({
   weight: "400",
-  variable: "--font-instrument-serif"
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
