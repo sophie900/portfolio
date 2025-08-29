@@ -1,5 +1,5 @@
 import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
-import { ProjectTag } from "./ProjectTag";
+import { ProjectTag } from "./project-tag";
 import Image from "next/image";
 import Link from "next/link";
 
