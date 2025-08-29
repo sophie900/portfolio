@@ -19,7 +19,7 @@ export const ProjectCard = ({
   return (
     <CardContainer>
       <Link href={link} target="_blank">
-        <CardBody className="bg-zinc-100 dark:bg-zinc-950/50
+        <CardBody className="bg-zinc-200/50 dark:bg-zinc-950/50
             relative group/card
             dark:border-zinc-300/20 border-zinc-900/20
             w-[84vw] md:w-[36vw] lg:w-[32vw] h-auto rounded-xl p-6 border

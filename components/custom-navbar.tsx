@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Navbar, NavbarLogo, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarButton } from "@/components/ui/resizable-navbar";
 import Link from 'next/link';
+import { ModeToggle } from './ui/mode-toggle';
 
 const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -11,6 +12,7 @@ const CustomNavbar = () => {
     { name: "projects", link: "/projects" },
     { name: "archive", link: "/archive" },
     { name: "about", link: "/about" },
+    { name: "contact", link: "/" }  // TODO: add contact page
   ];
 
   return (
@@ -20,7 +22,8 @@ const CustomNavbar = () => {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <NavbarButton as="a" href="" variant="primary">contact</NavbarButton>
+          <ModeToggle />
+          {/* <NavbarButton as="a" href="" variant="primary">contact</NavbarButton> */}
         </NavBody>
 
         {/* Mobile Navigation */}
