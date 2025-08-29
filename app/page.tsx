@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="mt-10 mb-10">
-          <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">Let's get in touch!</h1>
+          <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">Let&apos;s get in touch!</h1>
           <p className="paragraph p-8">
             Contact me at <Link
               href="mailto:sophie.rong@gmail.com"
