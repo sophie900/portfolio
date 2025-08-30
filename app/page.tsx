@@ -16,7 +16,7 @@ export default function Home() {
               projectName="picChef"
               description="A full-stack recipe identification app powered by Gemini image recognition."
               link="https://github.com/sophie900/picChef"
-              imagePath="/placeholder.svg"
+              imagePath="/picChef.png"
               tags={["React", "FastAPI", "Supabase", "Gemini API", "BeautifulSoup"]}
             />
 
@@ -24,7 +24,7 @@ export default function Home() {
               projectName="Portfolio Website"
               description="My personal coding & art portfolio. You're looking at it right now :)"
               link="/"
-              imagePath="/placeholder.svg"
+              imagePath="/Portfolio_light.png"
               tags={["Next.js", "Typescript", "Tailwind CSS", "Shadcn", "Aceternity UI"]}
             />
 
@@ -32,7 +32,7 @@ export default function Home() {
               projectName="Direct Messaging Chat"
               description="A direct messaging system between users. Stores all messages on user's local file system."
               link="https://sophierong.com"  // TODO: replace link
-              imagePath="/placeholder.svg"
+              imagePath="/DM_Chat.png"
               tags={["Python", "tkinter", "pathlib"]}
             />
 
@@ -40,7 +40,7 @@ export default function Home() {
               projectName="Irvindle"
               description="A UCI-themed Wordle spinoff game. Integrates real GPA data & made in a team of 4."
               link="https://irvindle.pages.dev"
-              imagePath="/placeholder.svg"
+              imagePath="/Irvindle.png"
               tags={["HTML", "CSS", "JavaScript", "Anteater API"]}
             />
           </div>
@@ -65,7 +65,9 @@ export default function Home() {
           <p className="paragraph p-4">
             Contact me at <Link
               href="mailto:sophie.rong@gmail.com"
-              className="underline transition-all ease-in-out hover:text-indigo-600 dark:hover:text-indigo-400"
+              className="underline transition-all duration-200 ease-in-out
+                text-indigo-500 dark:text-indigo-400
+                hover:text-indigo-600 dark:hover:text-indigo-300"
             >
               sophie.rong@gmail.com
             </Link>

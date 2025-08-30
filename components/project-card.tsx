@@ -27,11 +27,11 @@ export const ProjectCard = ({
       >
         <Link href={link} target="_blank">
           <CardItem className="w-full">
-            <Image  // TODO: remove placeholder image
+            <Image
               src={imagePath}
-              height={400}
-              width={600}
-              className="h-60 w-full object-cover rounded-lg"
+              height={900}
+              width={1440}
+              className="w-full object-cover rounded-lg"
               alt={projectName + " thumbnail"}
             />
           </CardItem>

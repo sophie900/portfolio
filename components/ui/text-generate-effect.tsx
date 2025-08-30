@@ -45,8 +45,7 @@ export const TextGenerateEffect = ({
               >
                 {word}{" "}
               </motion.span>
-            );
-          } else if ([4, 13].includes(idx)) {
+            ); } else if ([4, 13].includes(idx)) {
             return (
               <motion.span
                 key={word + idx}

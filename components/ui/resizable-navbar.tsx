@@ -8,7 +8,6 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import Link from "next/link";
-import Image from "next/image";
 
 import React, { useRef, useState } from "react";
 
@@ -236,13 +235,9 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-zinc-800"
     >
-      <Image
-        src="/circle.svg"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-      <span className="font-medium text-zinc-800 dark:text-zinc-100">Home</span>
+      { /* Homepage logo */}
+      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" width="30">
+        <path className="fill-zinc-500 dark:fill-zinc-200" d="M360,0C161.18,0,0,161.18,0,360s161.18,360,360,360,360-161.18,360-360S558.82,0,360,0ZM511.3,486.5c-23.7,88.5-114.7,141-203.2,117.3l-126.5-33.9c18.8-69.9,90.5-111.3,160.4-92.6,53.6,14.4,108.6-17.5,123-71,14.4-53.5-17.4-108.6-71-123,88.5,23.7,141,114.7,117.3,203.2ZM277.1,360c0-45.78,37.12-82.9,82.9-82.9s82.9,37.12,82.9,82.9-37.12,82.9-82.9,82.9-82.9-37.12-82.9-82.9ZM378,242.7c-53.6-14.4-108.6,17.4-123,71-14.4,53.5,17.4,108.6,71,123-88.5-23.7-141-114.7-117.3-203.2s114.7-141,203.2-117.3l126.5,33.9c-18.8,69.9-90.5,111.3-160.4,92.6Z"/></svg>
     </Link>
   );
 };
