@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import { useState } from 'react';
-import { Navbar, NavbarLogo, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarButton } from "@/components/ui/resizable-navbar";
+import { Navbar, NavbarLogo, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle } from "@/components/ui/resizable-navbar";
 import Link from 'next/link';
 import { ModeToggle } from './ui/mode-toggle';
 
@@ -9,10 +9,10 @@ const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const navItems = [
-    { name: "projects", link: "/projects" },
+    { name: "projects", link: "/#projects" },
     { name: "archive", link: "/archive" },
     { name: "about", link: "/about" },
-    { name: "contact", link: "/" }  // TODO: add contact page
+    { name: "contact", link: "/#contact" }  // TODO: replace with separate contact page
   ];
 
   return (

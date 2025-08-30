@@ -56,7 +56,10 @@ export const BackgroundGradientAnimation = ({
     document.body.style.setProperty("--pointer-color", pointerColor);
     document.body.style.setProperty("--size", size);
     document.body.style.setProperty("--blending-value", blendingValue);
-  }, []);
+  }, [
+    firstColor, secondColor, thirdColor, fourthColor, fifthColor,
+    pointerColor, size, blendingValue, gradientBackgroundEnd, gradientBackgroundStart
+  ]);
 
   useEffect(() => {
     function move() {
