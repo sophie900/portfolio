@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,33 +24,7 @@ export const metadata: Metadata = {
   description: "Sophie's creative portfolio",
 };
 
-// // export default function RootLayout({
-// //   children,
-// // }: {  // Removed ReadOnly
-// //   children: React.ReactNode;
-// // }) {
-// //   return (
-// //     <html lang="en" suppressHydrationWarning className={`scroll-smooth ${geistSans.className} antialiased`}>
-// //       <body
-// //         className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} antialiased
-// //         bg-zinc-100 dark:bg-zinc-900`}
-// //       >
-// //         <ThemeProvider
-// //             attribute="class"
-// //             defaultTheme="light"
-// //             enableSystem
-// //             disableTransitionOnChange
-// //         >
-// //           <CustomNavbar />
-// //           {children}
-// //         </ThemeProvider>
-// //       </body>
-// //     </html>
-// //   );
-// // }
-
-
-import CustomNavbar from "@/components/custom-navbar";
+import CustomNavbar from "@/components/ui/custom-navbar";
 import { ThemeProvider } from "@/components/theme-provider"
  
 type RootLayoutProps = {
@@ -78,6 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               mb-10"
             >
               {children}
+              <Analytics />
             </main>
           </ThemeProvider>
         </body>

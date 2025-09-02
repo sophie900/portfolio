@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Navbar, NavbarLogo, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle } from "@/components/ui/resizable-navbar";
 import Link from 'next/link';
-import { ModeToggle } from './ui/mode-toggle';
+import { ModeToggle } from './mode-toggle';
 
 const CustomNavbar = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);

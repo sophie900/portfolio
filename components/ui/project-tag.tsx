@@ -1,4 +1,4 @@
-import { CardItem } from "./ui/3d-card";
+import { CardItem } from "./3d-card";
 
 export const ProjectTag = ({text} : {text: string}) => {
   return (

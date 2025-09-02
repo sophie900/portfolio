@@ -1,4 +1,4 @@
-import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
+import { CardContainer, CardBody, CardItem } from "./3d-card";
 import { ProjectTag } from "./project-tag";
 import Image from "next/image";
 import Link from "next/link";

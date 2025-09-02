@@ -1,5 +1,5 @@
 import Hero from "@/components/hero-banner";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectCard } from "@/components/ui/project-card";
 import Link from "next/link";
 
 export default function Home() {
