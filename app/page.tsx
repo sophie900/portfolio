@@ -1,4 +1,5 @@
 import Hero from "@/components/hero-banner";
+import SkillsSection from "@/components/skills-section";
 import { ProjectCard } from "@/components/ui/project-card";
 import Link from "next/link";
 
@@ -25,7 +26,7 @@ export default function Home() {
               description="My personal coding & art portfolio. You're looking at it right now :)"
               link="/"
               imagePath="/Portfolio_light.png"
-              tags={["Next.js", "Typescript", "Tailwind CSS", "Shadcn", "Aceternity UI"]}
+              tags={["Next.js", "TypeScript", "Tailwind CSS", "Shadcn", "Aceternity UI"]}
             />
 
             <ProjectCard
@@ -46,23 +47,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="mt-10 mb-10">
+        <section id="skills" className="mt-10 mb-10 w-full">
           <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">
             Skills
           </h1>
 
-          <p className="paragraph p-4 w-full">
-            Languages: Python, JavaScript, TypeScript, HTML/CSS, SQL, LaTeX
-            <br />
-            Frameworks: React, Next, FastAPI, Tailwind CSS
-            <br />
-            Software: Git, Adobe Creative Suite (Illustrator, Photoshop, Premiere Pro), Figma
-          </p>
+          <SkillsSection />
         </section>
 
         <section id="contact" className="mt-10 mb-10">
           <h1 className="relative text-4xl font-semibold text-center text-zinc-800 dark:text-zinc-200">Let&apos;s get in touch!</h1>
-          <p className="paragraph p-4">
+          <p className="paragraph pt-8">
             Contact me at <Link
               href="mailto:sophie.rong@gmail.com"
               className="underline transition-all duration-200 ease-in-out
