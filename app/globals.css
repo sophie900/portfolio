@@ -168,6 +168,13 @@
   }
 }
 
+/* Custom classes */
 .paragraph {
   @apply text-base text-zinc-700 dark:text-zinc-300
+}
+
+.hyperlink {
+  @apply transition-all duration-200 ease-in-out
+    text-indigo-600 dark:text-indigo-400
+    hover:text-indigo-800 dark:hover:text-indigo-300
 }

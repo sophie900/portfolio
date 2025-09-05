@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function About() {
@@ -5,27 +6,36 @@ export default function About() {
     <main className="w-full
       flex flex-col justify-center items-center
       mx-auto overflow-hidden
-      px-10 md:px-20 lg:px-30 xl:px-40
+      px-10 lg:px-20 2xl:px-40
       mt-20 mb-20"
     >
         <h1 className="text-4xl font-semibold text-zinc-800 dark:text-zinc-200">About Me</h1>
         <div className="grid grid-cols-2 gap-8 py-10">
-        <Image
-          src="/circle.svg"
-          alt="Profile photo"
-          width={100}
-          height={100}
-          className="h-100 w-full object-cover col-span-2 lg:col-span-1 right-0 justify-self-center lg:justify-self-end"
-        />
-        <p className="paragraph col-span-2 lg:col-span-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          <br /><br />
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+          <Image
+            src="/circle.svg"
+            alt="Profile photo"
+            width={100}
+            height={100}
+            className="h-100 w-full object-cover col-span-2 lg:col-span-1 right-0 justify-self-center lg:justify-self-end"
+          />
+          <div className="col-span-2 lg:col-span-1">
+            <p className="paragraph mb-4">
+            Thanks for stopping by!
+            </p>
+
+            <p className="paragraph mb-4">
+            I&apos;m Sophie, a student at UC Irvine studying computer science.
+            In my free time, I enjoy coding, art & design, music (playing and listening), table tennis, and writing.
+            </p>
+
+            <p className="paragraph mb-4">
+            Previously, I <Link href="https://www.techknowhowkids.com/" target="_blank" className="hyperlink">taught kids to build cool tech</Link> and designed promotional content for the <Link href="https://ucidesignathon.devpost.com/" target="_blank" className="hyperlink">largest collegiate design hackathon in SoCal</Link>.
+            </p>
+
+            <p className="paragraph mb-4">
+            Feel free to reach out; I would love to chat with you!
+            </p>
+          </div>
         </div>
     </main>
   );
