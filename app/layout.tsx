@@ -50,7 +50,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               flex flex-col justify-center items-center
               mx-auto overflow-hidden
               px-10 md:px-20 lg:px-30 xl:px-40
-              mb-10"
+              mb-16"
             >
               {children}
               <Analytics />
