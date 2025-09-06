@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
+import CustomNavbar from "@/components/ui/custom-navbar";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
+/* Fonts */
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,9 +27,6 @@ export const metadata: Metadata = {
   title: "Sophie Rong",
   description: "Sophie's creative portfolio",
 };
-
-import CustomNavbar from "@/components/ui/custom-navbar";
-import { ThemeProvider } from "@/components/theme-provider"
  
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             >
               {children}
               <Analytics />
+              <SpeedInsights />
             </main>
           </ThemeProvider>
         </body>
@@ -61,4 +63,3 @@ export default function RootLayout({ children }: RootLayoutProps) {
     </>
   )
 }
-
